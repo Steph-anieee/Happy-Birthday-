@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2b1920">
+    <meta name="description" content="A birthday book filled with love for Daddy and Uncle Ernest.">
+    <title>A Birthday Book for Daddy / Uncle Ernest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="gift-stage">
+      <section class="lock-screen" id="lock-screen" aria-labelledby="lock-title">
+        <div class="lock-card">
+          <div class="lock-emblem" aria-hidden="true"><span class="lock-shackle"></span><span class="lock-body"></span></div>
+          <p class="eyebrow">A gift made just for you</p>
+          <h1 id="lock-title">Happy Birthday, Daddy / Uncle Ernest!</h1>
+          <p class="lock-subtitle">Enter your birthdate to unlock your gift!</p>
+          <form id="unlock-form" class="unlock-form">
+            <label for="birthdate">Your birthdate</label>
+            <input id="birthdate" name="birthdate" type="date" autocomplete="bday" required>
+            <button class="gold-button" type="submit">Unlock My Gift</button>
+            <p class="unlock-message" id="unlock-message" role="status" aria-live="polite"></p>
+          </form>
+          <p class="lock-footnote">From all of us, with all our love and gratitude</p>
+        </div>
+      </section>
+
+      <section class="book" id="book" aria-label="Birthday gift book" hidden>
+        <div class="book-spine" aria-hidden="true"></div>
+        <div class="book-pages" id="book-pages" aria-live="polite">
+          <article class="book-page is-active" data-page="0" aria-hidden="false" aria-labelledby="powers-title">
+            <div class="paper-content">
+              <header class="page-heading">
+                <p class="eyebrow">One of a kind, every day</p>
+                <h2 id="powers-title">Your many <em>superpowers</em></h2>
+                <p>There are a million reasons we love you. Here are a few of our favorites.</p>
+              </header>
+              <div class="envelope-grid">
+                <button class="envelope-card" type="button"
+                  data-letter-title="Chief Healer &amp; Pharmacist"
+                  data-letter-kicker="Always there when we need you"
+                  data-letter-story="Our personal doctor. Thank you for always taking care of us, whether you're calling Doctor Philip, running out to buy us drugs, or hand preparing your own herbal remedies to keep us strong and healthy. Even if your prescriptions require a lot of courage to swallow (bitter), they always keep us at our best!"
+                  data-letter-message="Rx: Pain relief for the man who never complains. Even when you're fighting silent battles, working tirelessly behind the scenes, or pouring your heart into taking care of us, we see your strength, your quiet sacrifices, and your unconditional love. May today bring you the exact rest, comfort, and peace you give to everyone else.">
+                  <span class="envelope-illustration" aria-hidden="true"><span class="letter-lines"></span><span class="envelope-fold"></span><span class="envelope-seal"></span></span>
+                  <span class="envelope-kicker">Always there when we need you</span>
+                  <span class="envelope-title">Chief Healer &amp; Pharmacist</span>
+                  <span class="envelope-action">Open Letter</span>
+                </button>
+                <button class="envelope-card" type="button"
+                  data-letter-title="Master Fix It &amp; Provider"
+                  data-letter-kicker="The one who holds it all together"
+                  data-letter-message="The man who keeps the entire house running, from fixing the sinks, the AC, and everything else when it breaks to holding down the entire family financially. Thank you for making sure the home is cared for and the family is provided for.">
+                  <span class="envelope-illustration" aria-hidden="true"><span class="letter-lines"></span><span class="envelope-fold"></span><span class="envelope-seal"></span></span>
+                  <span class="envelope-kicker">The one who holds it all together</span>
+                  <span class="envelope-title">Master Fix It &amp; Provider</span>
+                  <span class="envelope-action">Open Letter</span>
+                </button>
+                <button class="envelope-card" type="button"
+                  data-letter-title="Chief Storyteller &amp; Life Mentor"
+                  data-letter-kicker="Wisdom, stories and all those talks"
+                  data-letter-message="Thank you for all the hours of long talks, life lessons, friendly chats, and sharing stories from your journey with us. Your wisdom stays with us, and every conversation helps us grow.">
+                  <span class="envelope-illustration" aria-hidden="true"><span class="letter-lines"></span><span class="envelope-fold"></span><span class="envelope-seal"></span></span>
+                  <span class="envelope-kicker">Wisdom, stories and all those talks</span>
+                  <span class="envelope-title">Chief Storyteller &amp; Life Mentor</span>
+                  <span class="envelope-action">Open Letter</span>
+                </button>
+                <button class="envelope-card" type="button"
+                  data-letter-title="Master of Humor &amp; Good Vibe Generator"
+                  data-letter-kicker="Our favorite source of laughter"
+                  data-letter-message="Thank you for always making us laugh, sharing your great humor, and turning simple conversations into moments we always look forward to. Your light and good nature make every day brighter.">
+                  <span class="envelope-illustration" aria-hidden="true"><span class="letter-lines"></span><span class="envelope-fold"></span><span class="envelope-seal"></span></span>
+                  <span class="envelope-kicker">Our favorite source of laughter</span>
+                  <span class="envelope-title">Master of Humor &amp; Good Vibe Generator</span>
+                  <span class="envelope-action">Open Letter</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-page" data-page="1" aria-hidden="true" aria-labelledby="strength-title">
+            <div class="paper-content strength-content">
+              <header class="page-heading">
+                <p class="eyebrow">WE NOTICE THE THINGS YOU DO NOT SAY</p>
+                <h2 id="strength-title">To the man who stays <em>strong for all of us</em></h2>
+                <p>You take care of us in ways big and small. Today, we want you to know we see you, too.</p>
+              </header>
+              <div class="strength-list">
+                <article class="strength-note"><span class="strength-number">01</span><div><h3>When you are not feeling well</h3><p>You rarely tell us when you are sick or hurting. You just push through and keep caring for everyone else.</p></div></article>
+                <article class="strength-note"><span class="strength-number">02</span><div><h3>When you are carrying heavy loads</h3><p>Even when life gets overwhelming or things are going on behind the scenes that we do not fully know about, you try to keep a calm face so we never have to worry.</p></div></article>
+                <article class="strength-note"><span class="strength-number">03</span><div><h3>When you are tired</h3><p>Even when it shows on your face, you still show up for this family every single day with a warm joke or smile.</p></div></article>
+              </div>
+              <p class="strength-closing">You do not always have to be the strong one around us. We see you, we appreciate your quiet strength, and we are so grateful for you.</p>
+            </div>
+          </article>
+
+          <article class="book-page cake-page" data-page="2" aria-hidden="true" aria-labelledby="cake-title">
+            <div class="paper-content cake-content">
+              <header class="page-heading cake-heading">
+                <p class="eyebrow">Your wish is our command</p>
+                <h2 id="cake-title">Make a birthday <em>wish</em></h2>
+                <p>Make a wish, Daddy/Uncle Ernest, and blow into your microphone to put out all eight candles!</p>
+              </header>
+              <div class="cake-stage" id="cake-stage">
+                <div class="cake-glow" aria-hidden="true"></div>
+                <div class="cake-visual" role="img" aria-label="A two tier birthday cake with eight lit candles">
+                  <div class="candle-row">
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                    <div class="candle"><button class="flame" type="button" aria-label="Blow out all eight candles"><span class="flame-shape" aria-hidden="true"></span></button><span class="smoke" aria-hidden="true"></span><span class="candle-wax" aria-hidden="true"></span></div>
+                  </div>
+                  <div class="cake-tier cake-tier-upper" aria-hidden="true"><span class="tier-decoration"></span><i class="upper-drip drip-a"></i><i class="upper-drip drip-b"></i><i class="upper-drip drip-c"></i></div>
+                  <div class="cake-tier cake-tier-lower" aria-hidden="true"><span class="tier-decoration"></span><i class="lower-drip drip-d"></i><i class="lower-drip drip-e"></i><i class="lower-drip drip-f"></i><i class="lower-drip drip-g"></i></div>
+                  <div class="cake-plate" aria-hidden="true"></div>
+                </div>
+                <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+              </div>
+              <div class="cake-controls">
+                <button class="song-toggle" id="song-toggle" type="button" aria-pressed="false">Play birthday song</button>
+                <button class="gold-button mic-button" id="mic-button" type="button"><span class="mic-icon" aria-hidden="true"></span> Turn on microphone</button>
+                <p class="mic-status" id="mic-status" role="status" aria-live="polite">Microphone is off. You can also tap any flame to put out all eight.</p>
+              </div>
+              <p class="success-message" id="success-message" role="status" aria-live="polite" hidden>Wish Granted! Happy Birthday!</p>
+            </div>
+            <audio id="birthday-song" src="Happy birthday!.mp3" preload="auto"></audio>
+          </article>
+
+          <article class="book-page" data-page="3" aria-hidden="true" aria-labelledby="note-title">
+            <div class="paper-content note-content">
+              <header class="page-heading">
+                <p class="eyebrow">A note from one of your biggest fans</p>
+                <h2 id="note-title">The things I learn from <em>you</em></h2>
+              </header>
+              <article class="personal-letter">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <p>Happy Birthday Uncle Ernest! Having someone like you in my life who cares for, guides, and protects me just like
+                your own daughter is one of the greatest blessings I could ever ask for.
+                I want you to know how deeply grateful I am for everything you do. Thank you for every piece of advice, every moment of
+                support, and all the kindness and warmth you pour into my life.
+                May this year bring you as much happiness, good health, and peace as you so generously give to everyone around you,
+                Uncle Ernest. You deserve the absolute best today and always! 🎂.</p>
+                <div class="letter-signature"><span class="signature-line"></span><h3>Naa</h3></div>
+              </article>
+            </div>
+          </article>
+
+          <article class="book-page final-page" data-page="4" aria-hidden="true" aria-labelledby="cousins-title">
+            <div class="paper-content cousins-content">
+              <header class="page-heading">
+                <p class="eyebrow">A whole lot of love, from all of us</p>
+                <h2 id="cousins-title">Your favorite <em>little people</em></h2>
+              </header>
+              <div class="cousin-grid">
+                <article class="cousin-note"><p>Happy Birthday Daddy! Thank you for everything and for buying me all the toys.I want to bless you and I also want to eat some of your cake.</p><h3>Ayeyi</h3></article>
+                <article class="cousin-note"><p>Happy Birthday Daddy! I love you so much. Thank you for buying me toys and thank you for everything you’ve done for me. God bless you!</p><h3>Nhyira</h3></article>
+              </div>
+              <p class="final-message">We may be young, but we know how lucky we are to have you as our Daddy and Uncle. Happy Birthday to our pillar, our doctor, and our hero!</p>
+              <p class="end-note">Made with all our love</p>
+            </div>
+          </article>
+        </div>
+        <button class="page-turn turn-previous" id="turn-previous" type="button" aria-label="Turn to the earlier page"></button>
+        <button class="page-turn turn-next" id="turn-next" type="button" aria-label="Turn to the later page"></button>
+        <p class="book-hint" id="book-hint">Swipe or tap a page edge to turn</p>
+      </section>
+    </main>
+
+    <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-dialog-title" aria-describedby="letter-dialog-message">
+      <article class="letter-paper">
+        <button class="dialog-close" id="dialog-close" type="button" aria-label="Close letter">×</button>
+        <span class="letter-seal" aria-hidden="true"></span>
+        <p class="eyebrow" id="letter-dialog-kicker"></p>
+        <h2 id="letter-dialog-title"></h2>
+        <p id="letter-dialog-story" hidden></p>
+        <button class="diagnose-button" id="diagnose-button" type="button" aria-expanded="false" hidden>Diagnosed</button>
+        <div class="prescription-reveal" id="prescription-reveal" aria-hidden="true">
+          <p id="letter-dialog-prescription"></p>
+        </div>
+        <p id="letter-dialog-message"></p>
+        <p class="letter-signoff">With all our love</p>
+      </article>
+    </dialog>
+  </body>
+</html>
